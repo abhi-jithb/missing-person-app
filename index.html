@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Person Alert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚨 Missing Person Alert 🚨</h1>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>🔍 Report a Missing Person</h2>
+            <form id="missingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+
+                <label for="image">Image URL:</label>
+                <input type="url" id="image" placeholder="Paste image link" required>
+
+                <button type="submit">Report Missing</button>
+            </form>
+        </section>
+
+        <section class="list-container">
+            <h2>📜 Reported Missing People</h2>
+            <div id="missingList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🚨 If you have any information, contact the nearest police station 🚔</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
